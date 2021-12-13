@@ -1,0 +1,112 @@
+.placeholder-font-kidgames::placeholder {
+  font-family: kidgames;
+}
+
+.title-shadow {
+  filter: drop-shadow(2.007px 2.229px 0px rgba(80, 25, 30, 0.39));
+  -ms-filter: drop-shadow(2.007px 2.229px 0px rgba(80, 25, 30, 0.39));
+  -webkit-filter: drop-shadow(2.007px 2.229px 0px rgba(80, 25, 30, 0.39));
+}
+
+.title-shadow-purple {
+  filter: drop-shadow(0px 3px 0px #500f1d);
+  -ms-filter: drop-shadow(0px 3px 0px #500f1d);
+  -webkit-filter: drop-shadow(0px 3px 0px #500f1d);
+}
+
+
+
+.percent-list .percent-item::after {
+  content: '';
+  position: absolute;
+  -webkit-transition: all 2s ease-in-out;
+  -moz-transition: all 2s ease-in-out;
+  -o-transition: all 2s ease-in-out;
+  transition: all 2s ease-in-out;
+  top: 27%;
+  left: 3.5%;
+  width: 0;
+  max-width: 94%;
+  height: 37%;
+  background-image: linear-gradient(0deg, #edc369 0%, #ffa737 100%, #ffdf7f 100%);
+}
+
+.percent-list.active .percent-item::after {
+  width: var(--percent);
+}
+
+.play-button {
+  top: 44%;
+  left: 48%;
+  width: 7vw;
+  cursor: pointer;
+  max-width: 105px;
+}
+
+.play-button::after {
+  content: '';
+  position: absolute;
+  top: 48%;
+  left: 55%;
+  border-top: 0.75vw solid transparent;
+  border-bottom: 0.75vw solid transparent;
+  border-left: 1.5vw solid #b94f2f;
+  transition: all 0.2s ease;
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  -ms-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transform: translate(-50%, -50%);
+}
+
+.play-button:hover::after {
+  border-left: 1.5vw solid #ffde00;
+}
+
+.chicken-bg {
+  background: url('../images/chicken_bg.png') center no-repeat;
+  background-size: cover;
+}
+
+.flag-play {
+  font-size: 2.5vw;
+  top: 50%;
+  left: 40.5%;
+  transform: rotate(5deg);
+  filter: drop-shadow(2.677px 2.973px 0px rgba(104, 52, 0, 0.39));
+}
+
+.flag-pichdeck {
+  font-size: 1.15vw;
+  top: 62%;
+  left: 48.5%;
+  transform: rotate(-7deg);
+  filter: drop-shadow(2.677px 2.973px 0px rgba(104, 52, 0, 0.39));
+}
+
+.buytoken-btn {
+  bottom: 6%;
+  width: 16vw;
+  left: 41%;
+}
+
+.buytoken-btn a {
+  font-size: 1.75vw;
+}
+
+@media screen and (max-width: 767px) {
+  .chicken-bg {
+    background: url('../images/chicken_bg.png') bottom no-repeat;
+    background-size: 100% auto;
+  }
+
+  .buytoken-btn {
+    bottom: 6%;
+    left: 38%;
+    width: 25vw;
+  }
+
+  .buytoken-btn a {
+    font-size: 2.75vw;
+  }
+}

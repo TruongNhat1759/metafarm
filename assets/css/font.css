@@ -1,0 +1,6 @@
+@font-face {
+  font-family: kidgames;
+  font-style: normal;
+  display: swap;
+  src: url('../fonts/kid_games/kidgame.ttf') format('truetype');
+}
