@@ -5,8 +5,6 @@ $(function(){
     $(window).on('load resize scroll', function() {
         if ($(window).scrollTop() > ($('.percent-list').offset().top + 50 - $(window).outerHeight())) {
             $('.percent-list').addClass('active');
-        } else {
-            $('.percent-list').removeClass('active');
         }
     })
     
@@ -39,9 +37,6 @@ $(function(){
     $(window).bind('load resize', function(){
         $('.toggle-menu').removeClass('active');
         $('.menu-slide').removeClass('active');
-    })
-    $(window).on('resize', function(){
-        $('.videoYoutube').css('height', $('.videoYoutube').width() * 315 / 560);
     })
 
     $('.toggle-menu').on('click', function () {
