@@ -4,3 +4,10 @@
   display: swap;
   src: url('../fonts/kid_games/kidgame.ttf') format('truetype');
 }
+
+@font-face {
+  font-family: gameria;
+  font-style: normal;
+  display: swap;
+  src: url('../fonts/gameria/gameria.ttf') format('truetype');
+}

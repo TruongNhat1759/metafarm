@@ -8,13 +8,35 @@
   -webkit-filter: drop-shadow(2.007px 2.229px 0px rgba(80, 25, 30, 0.39));
 }
 
+.title-shadow-green {
+  filter: drop-shadow(0.485px 0.875px 0px #0b7201);
+  -ms-filter: drop-shadow(0.485px 0.875px 0px #0b7201);
+  -webkit-filter: drop-shadow(0.485px 0.875px 0px #0b7201);
+}
+
+.title-shadow-brown {
+  filter: drop-shadow(0px 2px 0px #893e13);
+  -ms-filter: drop-shadow(0px 2px 0px #893e13);
+  -webkit-filter: drop-shadow(0px 2px 0px #893e13);
+}
+
 .title-shadow-purple {
   filter: drop-shadow(0px 3px 0px #500f1d);
   -ms-filter: drop-shadow(0px 3px 0px #500f1d);
   -webkit-filter: drop-shadow(0px 3px 0px #500f1d);
 }
 
+.text-fbfbfd-to-f5e5c5 {
+  background: -webkit-linear-gradient(#fbfbfd, #f5e5c5);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 
+.text-ffefd1-to-fbcb7d {
+  background: -webkit-linear-gradient(#ffefd1, #fbcb7d);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 
 .percent-list .percent-item::after {
   content: '';
@@ -92,6 +114,15 @@
 
 .buytoken-btn a {
   font-size: 1.75vw;
+}
+
+.checkbox-custom-remember.active {
+  background: #ffde00;
+}
+
+.main-has-bg {
+  background: url('../images/main_banner.png') bottom center no-repeat;
+  background-size: cover;
 }
 
 @media screen and (max-width: 767px) {

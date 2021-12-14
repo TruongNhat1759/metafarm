@@ -1,15 +1,26 @@
 $(function(){
-    // $('.precent-counter').counterUp({
-    //     time: 1000
-    // });
+    $('a[href^="#"]').click(function() {
+        if ($($(this).attr('href')).length) {
+            $('.toggle-menu').removeClass('active');
+            $('.menu-slide').removeClass('active');
+            const positonElement = $($(this).attr('href')).offset().top;
+            $('html, body').animate({ scrollTop: positonElement - 50 }, 400);
+        }
+        return false;
+    })
+
     $(window).on('load resize scroll', function() {
-        if ($(window).scrollTop() > ($('.percent-list').offset().top + 50 - $(window).outerHeight())) {
-            $('.percent-list').addClass('active');
+        if($('body').find('.percent-list').length > 0) {
+            if ($(window).scrollTop() > ($('.percent-list').offset().top + 50 - $(window).outerHeight())) {
+                $('.percent-list').addClass('active');
+            }
         }
     })
     
     const addressWallet = $('.addressWallet').html();
-    $('.addressWallet').html(addressWallet.slice(0, 12) + '...' + addressWallet.slice(-16));
+    if($('body').find('.addressWallet').length > 0) {
+        $('.addressWallet').html(addressWallet.slice(0, 12) + '...' + addressWallet.slice(-16));
+    }
 
     $('.copyWallet').on('click', function() {
         navigator.clipboard.writeText(addressWallet);
@@ -50,6 +61,11 @@ $(function(){
 
     $('[data-close-modal]').on('click', function () {
         $('.modalVideo').hide()
+    })
+    
+    $('.checkbox-custom-remember, .checkbox-custom-remember-label').on('click', function() {
+        $('.checkbox-custom-remember').toggleClass('active');
+        $('#remember').attr('checked', !$('#remember').attr('checked'))
     })
     
 })

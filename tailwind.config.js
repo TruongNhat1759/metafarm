@@ -7,11 +7,13 @@ module.exports = {
     fontFamily: {
       roboto: ['"Roboto", sans-serif'],
       kidgames: ['kidgames'],
+      gameria: ['gameria'],
     },
     extend: {
       fontSize: {
         '10': '10px',
         '12': '12px',
+        '13': '13px',
         '14': '14px',
         '16': '16px',
         '18': '18px',
@@ -41,6 +43,8 @@ module.exports = {
           '50191e': '#50191e',
           '320609': '#320609',
           '310509': '#310509',
+          '662b0a': '#662b0a',
+          '662b0a-60': 'rgba(102, 43, 10, 0.6)',
           'f3b97f': '#f3b97f',
           'fbaa7f': '#fbaa7f',
           'fbaa7f-60': 'rgba(251, 170, 127, 0.6)',
@@ -56,6 +60,10 @@ module.exports = {
       height: {
         '65px': '65px',
         '315': '315px',
+        '350': '400px',
+        '400': '400px',
+        '500': '500px',
+        '600': '600px',
       },
       maxWidth: {
         '473': '473px',

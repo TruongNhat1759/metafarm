@@ -5,6 +5,7 @@ const gulp = require("gulp");
 files = [
   "./src/index.html",
   "./src/login.html",
+  "./src/buytoken.html",
 ];
 gulp.task("compile", async function () {
   await gulp
